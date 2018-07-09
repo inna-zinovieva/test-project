@@ -160,7 +160,7 @@ var name_pattern = /[A-Za-zА-Яа-яЁё]/i;
 var name_warning = document.querySelector(".name-warning");
 var email_pattern = /^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$/i;
 var email_warning = document.querySelector(".email-warning");
-var password_pattern = /[0-9a-zA-Z!@#$%^&*]{8,}/i;
+var password_pattern = /[0-9a-zA-ZА-Яа-яЁё!@#$%^&*]{8,}/i;
 var password_warning = document.querySelector(".password-warning");
 var checkbox_warning = document.querySelector('checkbox-warning');
 
