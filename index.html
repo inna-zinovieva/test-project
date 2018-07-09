@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Genesis-test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/icomoon.css">
+</head>
+<body>
+    <div class="main">
+        <div class="photo">
+            <div class="photo__block second-block">
+                <p class="percent second-block__percent invisibled">%</p>
+                <div class="variant second-variant invisibled">
+                    <h2 class="variant__result second-variant__result">0</h2>
+                    <p>людей обращают внимаНие на А.</p>
+                </div>
+                <div class="variant second-variant invisibled">
+                    <h2 class="variant__result second-variant__result">0</h2>
+                    <p>людей обращают внимание на Б.</p>
+                </div>
+                <div class="variant second-variant invisibled">
+                    <h2 class="variant__result second-variant__result">0</h2>
+                    <p>людей обращают внимание на В.</p>
+                </div>
+            </div>
+            <div class="photo__block third-block">
+                <div class="variant third-variant invisibled-animated">
+                    <h2 class="variant__result variant__result_view">52,4%</h2>
+                    <p>пользователей - вариант А.</p>
+                </div>
+                <div class="variant third-variant invisibled-animated">
+                    <h2 class="variant__result variant__result_view">47,6%</h2>
+                    <p>пользователей - вариант Б.</p>
+                </div>
+            </div>
+            <div class="photo__nav">
+                <a class="link" href="#">название1</a>
+                <a class="link" href="#">название2</a>
+                <a class="link" href="#">название3</a>
+                <a class="link" href="#">название4</a>
+                <a class="link" href="#">очень длинное название5</a>
+                <a class="link" href="#">очень длинное название6</a>
+                <a class="link" href="#">длинное название7</a>
+                <a class="link" href="#">длинное название8</a>
+            </div>
+        </div>
+        <div class="form forms">
+            <div class="form__frame"></div>
+            <div class="form__body">
+                <div class="form__icon"><i class="fa fa-heart heart-icon"></i></div>
+                <h2>Lorem ipsum</h2>
+                <p>Mauris vel nisi ac orci placerat semper. Aenean sapien massa.</p>
+                <p class="question">lorem ipsum?</p>
+                <div class="start-button" id="start">начать</div>
+            </div>
+        </div>
+        <div class="second-form forms invisibled">
+            <div class="second-form__frame"></div>
+            <div class="second-form__body">
+                <div class=" form__icon second-form__icon"><i class="fa fa-heart heart-icon"></i></div>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a urna sit amet </h2>
+                <div class="second-form__variants">
+                    <div class="variant-btn second-form__btn">Вариант А</div>
+                    <div class="variant-btn second-form__btn">Вариант Б</div>
+                    <div class="variant-btn second-form__btn">Вариант В</div>
+                </div>
+                <div class="continue-btn">продолжить</div>
+            </div>
+        </div>
+        <div class="third-form forms invisibled">
+            <div class="third-form__frame"></div>
+            <div class="third-form__body">
+                <div class="form__icon third-form__icon"><i class="fa fa-heart heart-icon"></i></div>
+                <h2>Lorem ipsum</h2>
+                <div class="third-form__variants">
+                    <div class="variant-btn third-form__btn"><span class="icon-man"></span>Вариант А</div>
+                    <div class="variant-btn third-form__btn"><span class="icon-woman"></span>Вариант Б</div>
+                </div>
+                <div class="continue-btn third-form__continue-btn">продолжить</div>
+            </div>
+        </div>
+        <div class="fourth-form forms invisibled">
+            <div class="fourth-form__frame"></div>
+            <div class="fourth-form__body">
+                <div class="form__icon fourth-form__icon"><i class="fa fa-heart heart-icon"></i></div>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h2>
+                <p class="search">Я ищу:</p>
+                <div class="fourth-form__variants">
+                    <div class="variant-btn fourth-form__btn"><span class="icon-man"></span>Вариант А</div>
+                    <div class="variant-btn fourth-form__btn"><span class="icon-woman"></span>Вариант Б</div>
+                </div>
+                <div class="registration">
+                    <form action="" id="form" onsubmit="return isValid(this)">
+                        <p>
+                            <label for="name">Ваше имя:</label><br>
+                            <input type="text" name="" id="name" class="name" autocomplete="name">
+                            <p class="warning name-warning">*Ваше имя может содержать только буквенные символы</p>
+                        </p>
+                        <p>
+                            <label for="e-mail">Email:</label><br>
+                            <input type="email" name="" id="e-mail" class="email" autocomplete="email">
+                            <p class="warning email-warning">*E-mail некорректный</p>
+                        </p>
+                        <p>
+                            <label for="password">Придумайте пароль:</label><br>
+                            <input type="password" name="" id="password" class='password' autocomplete='password'>
+                            <p class="warning password-warning">*Пароль должен содержать не менее 8 символов</p>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="" id="agree">
+                            <label for="agree">Регистрируясь, вы подтверждаете, что вам уже исполнилось 
+                            18 лет и вы ознакомились с условиями пользования сайтом.</label>
+                        </p>
+                        <p>
+                            <input type="submit"  id="" class="continue-btn fourth-form__continue-btn" value="продолжить">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
